@@ -1,0 +1,88 @@
+standard
+***Report Model: top Device: EG4S20BG256***
+
+IO Statistics
+#IO                        49
+  #input                   17
+  #output                  32
+  #inout                    0
+
+Utilization Statistics
+#lut                        2   out of  19600    0.01%
+#reg                        0   out of  19600    0.00%
+#le                         2
+  #lut only                 2   out of      2  100.00%
+  #reg only                 0   out of      2    0.00%
+  #lut&reg                  0   out of      2    0.00%
+#dsp                        0   out of     29    0.00%
+#bram                       0   out of     64    0.00%
+  #bram9k                   0
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#pad                       49   out of    188   26.06%
+  #ireg                     0
+  #oreg                     0
+  #treg                     0
+#pll                        1   out of      4   25.00%
+#gclk                       1   out of     16    6.25%
+
+Clock Resource Statistics
+Index     ClockNet          Type               DriverType         Driver                  Fanout
+#1        clk_dup_1         GeneralRouting     io                 clk_syn_2.di            1
+#2        u_pll/clk0_buf    GCLK               pll                u_pll/pll_inst.clkc0    0
+
+
+Detailed IO Report
+
+     Name        Direction    Location    IOStandard    DriveStrength    PullType    PackReg  
+    all_sw         INPUT        R14        LVCMOS33          N/A          PULLUP      NONE    
+      clk          INPUT        K14        LVCMOS33          N/A          PULLUP      NONE    
+     rst_n         INPUT        R15        LVCMOS33          N/A          PULLUP      NONE    
+     beep         OUTPUT         M3        LVCMOS33           8            NONE       NONE    
+      hs          OUTPUT         J3        LVCMOS33           8            NONE       NONE    
+  regrgb1[15]     OUTPUT         K6        LVCMOS33           8            NONE       NONE    
+  regrgb1[14]     OUTPUT         K3        LVCMOS33           8            NONE       NONE    
+  regrgb1[13]     OUTPUT         K5        LVCMOS33           8            NONE       NONE    
+  regrgb1[12]     OUTPUT         L4        LVCMOS33           8            NONE       NONE    
+  regrgb1[11]     OUTPUT         M1        LVCMOS33           8            NONE       NONE    
+  regrgb1[10]     OUTPUT         H5        LVCMOS33           8            NONE       NONE    
+  regrgb1[9]      OUTPUT         H1        LVCMOS33           8            NONE       NONE    
+  regrgb1[8]      OUTPUT         J6        LVCMOS33           8            NONE       NONE    
+  regrgb1[7]      OUTPUT         H3        LVCMOS33           8            NONE       NONE    
+  regrgb1[6]      OUTPUT         J1        LVCMOS33           8            NONE       NONE    
+  regrgb1[5]      OUTPUT         K1        LVCMOS33           8            NONE       NONE    
+  regrgb1[4]      OUTPUT         C1        LVCMOS33           8            NONE       NONE    
+  regrgb1[3]      OUTPUT         D1        LVCMOS33           8            NONE       NONE    
+  regrgb1[2]      OUTPUT         E2        LVCMOS33           8            NONE       NONE    
+  regrgb1[1]      OUTPUT         G3        LVCMOS33           8            NONE       NONE    
+  regrgb1[0]      OUTPUT         E1        LVCMOS33           8            NONE       NONE    
+    seg[6]        OUTPUT         B2        LVCMOS33           8            NONE       NONE    
+    seg[5]        OUTPUT         D3        LVCMOS33           8            NONE       NONE    
+    seg[4]        OUTPUT         F5        LVCMOS33           8            NONE       NONE    
+    seg[3]        OUTPUT         E4        LVCMOS33           8            NONE       NONE    
+    seg[2]        OUTPUT         F4        LVCMOS33           8            NONE       NONE    
+    seg[1]        OUTPUT         B3        LVCMOS33           8            NONE       NONE    
+    seg[0]        OUTPUT         E3        LVCMOS33           8            NONE       NONE    
+  seg_sel[3]      OUTPUT         F3        LVCMOS33           8            NONE       NONE    
+  seg_sel[2]      OUTPUT         C2        LVCMOS33           8            NONE       NONE    
+  seg_sel[1]      OUTPUT         C3        LVCMOS33           8            NONE       NONE    
+  seg_sel[0]      OUTPUT         B1        LVCMOS33           8            NONE       NONE    
+    vga_clk       OUTPUT         H2        LVCMOS33           8            NONE       NONE    
+      vs          OUTPUT         J4        LVCMOS33           8            NONE       NONE    
+   warn_flag      OUTPUT         M4        LVCMOS33           8            NONE       NONE    
+
+Report Hierarchy Area:
++----------------------------------------------------------------------+
+|Instance |Module |le     |lut     |ripple  |seq     |bram    |dsp     |
++----------------------------------------------------------------------+
+|top      |top    |2      |2       |0       |0       |0       |0       |
+|  u_pll  |pll    |1      |1       |0       |0       |0       |0       |
++----------------------------------------------------------------------+
+
+
+DataNet Average Fanout:
+
+   Index     Fanout    Nets  
+    #1         1        4    
+    #2        5-10      1    
+  Average     1.80           

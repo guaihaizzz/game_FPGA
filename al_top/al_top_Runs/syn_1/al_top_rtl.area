@@ -1,0 +1,34 @@
+standard
+***Report Model: top Device: EG4S20BG256***
+
+IO Statistics
+#IO                        49
+  #input                   17
+  #output                  32
+  #inout                    0
+
+Gate Statistics
+#Basic gates                2
+  #and                      0
+  #nand                     0
+  #or                       0
+  #nor                      0
+  #xor                      0
+  #xnor                     0
+  #buf                      0
+  #not                      1
+  #bufif1                   0
+  #MX21                     1
+  #FADD                     0
+  #DFF                      0
+  #LATCH                    0
+#MACRO_MUX                  1
+#MACRO_OTHERS               1
+
+Report Hierarchy Area:
++-----------------------------------------+
+|Instance |Module |gates  |seq    |macros |
++-----------------------------------------+
+|top      |top    |2      |0      |1      |
+|  u_pll  |pll    |0      |0      |1      |
++-----------------------------------------+
